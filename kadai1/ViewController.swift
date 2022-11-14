@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  kadai1
 //
-//  Created by 小崎友紀 on 2022/11/11.
+//
 //
 
 import UIKit
