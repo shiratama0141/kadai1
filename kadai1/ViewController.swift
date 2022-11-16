@@ -14,15 +14,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var textLabel3: UITextField!
     @IBOutlet weak var textLabel4: UITextField!
     @IBOutlet weak var textLabel5: UITextField!
-    
+
     @IBOutlet weak var resultLabel: UILabel!
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
-//  キーボードを数字のみにする
+
+        //  キーボードを数字のみにする
         textFeild1.keyboardType = .numberPad
         textLabel2.keyboardType = .numberPad
         textLabel3.keyboardType = .numberPad
@@ -31,24 +29,23 @@ class ViewController: UIViewController {
     }
 
     @IBAction func pressButton(_ sender: Any) {
-//  入力
-        let number1 = (textFeild1.text! as NSString).integerValue
-        let number2 = (textLabel2.text! as NSString).integerValue
-        let number3 = (textLabel3.text! as NSString).integerValue
-        let number4 = (textLabel4.text! as NSString).integerValue
-        let number5 = (textLabel5.text! as NSString).integerValue
-        
-//  処理
+        //  入力
+        let number1 = Int(textFeild1.text ?? "") ?? 0
+        let number2 = Int(textLabel2.text ?? "") ?? 0
+        let number3 = Int(textLabel3.text ?? "") ?? 0
+        let number4 = Int(textLabel4.text ?? "") ?? 0
+        let number5 = Int(textLabel5.text ?? "") ?? 0
+
+        //  処理
         let result = number1 + number2 + number3 + number4 + number5
-        
-//  出力
+
+        //  出力
         resultLabel.text = "\(result)"
     }
-    
-//  ラベルとボタン以外の画面をタップするとキーボードが閉じる
+
+    //  ラベルとボタン以外の画面をタップするとキーボードが閉じる
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         view.endEditing(true)
     }
-    
-}
 
+}
