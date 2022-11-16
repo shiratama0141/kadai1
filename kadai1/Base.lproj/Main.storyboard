@@ -83,11 +83,11 @@
                     </view>
                     <connections>
                         <outlet property="resultLabel" destination="2Cb-mE-WrY" id="vab-nJ-snu"/>
-                        <outlet property="textFeild1" destination="SGQ-a1-zNz" id="Eji-8i-bUS"/>
-                        <outlet property="textLabel2" destination="bqV-gZ-xTc" id="rCM-dh-6gD"/>
-                        <outlet property="textLabel3" destination="eyU-Bc-1rf" id="bbI-LP-M4O"/>
-                        <outlet property="textLabel4" destination="yCC-y0-LwS" id="DLj-qY-7RE"/>
-                        <outlet property="textLabel5" destination="yH9-66-nsX" id="fu5-Yz-ZvU"/>
+                        <outlet property="textField1" destination="SGQ-a1-zNz" id="3np-55-A3c"/>
+                        <outlet property="textField2" destination="bqV-gZ-xTc" id="xvC-fc-vem"/>
+                        <outlet property="textField3" destination="eyU-Bc-1rf" id="pDF-cw-ydq"/>
+                        <outlet property="textField4" destination="yCC-y0-LwS" id="5PI-tQ-0if"/>
+                        <outlet property="textField5" destination="yH9-66-nsX" id="Bss-DS-WMN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
